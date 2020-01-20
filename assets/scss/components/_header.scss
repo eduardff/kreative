@@ -1,0 +1,23 @@
+/* Header */
+.header{
+    background: $color-bg-footer;
+    opacity: 0.8;
+    height: 4rem;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: $z-index-fixed;
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 4rem;
+    }
+}
+.logo{
+    margin-left: 1rem;
+    margin-right: 2.5rem;
+}

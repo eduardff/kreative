@@ -3,19 +3,49 @@
     $font-title:        'Montserrat', sans-serif; //title
 
     $weight-light:      300;
-    $weight:            400;
+    $weight-normal:     400;
     $weight-semi-bold:  600;
     $weight-bold:       700;
 
     /* $kerning:;
     $kerning-heading:; */
 
+//Font-size
+    :root{
+        --font-size-normal: 1rem;
+        --font-size-medium:;
+        --font-size-small:.875rem;
+        --font-size-h1: 2rem;
+        --font-size-h2:;
+        --font-size-h3:;
+        
+        @include from(medium){
+            --font-size-h1: 2rem;
+        }
+        @include from(large){
+            --font-size-h1:3rem;
+        }
+    }
 //Color palette
     $color-bg:          #F5F5F5; //section / text
     $color-bg-dark:     #191b1d; //section
     $color-bg-footer:   #151719; //footer
 
     $color-fg:          #4E565F; //text general
-    $color-accent:      #0F9095; //section
-    $color-accent-bg:   #036569; //boton
-    $color-accent-text: #7FE6ED; //text-accent
+    $color-accent:      #cc0022; //section
+    $color-accent-bg:   #8f0029; //button
+    $color-accent-text: #ffbfd1; //text-accent
+
+// Layout Container
+    $container:         1100px;
+// Header
+    $header-height:     4rem;
+//Z-Index
+    $z-index-dropdown:             1000;
+    $z-index-sticky:               1020;
+    $z-index-fixed:                1030;
+    $z-index-modal-backdrop:       1040;
+    $z-index-modal:                1050;
+    $z-index-popover:              1060;
+    $z-index-tooltip:              1070;
+    

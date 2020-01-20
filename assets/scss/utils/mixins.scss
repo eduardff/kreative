@@ -1,0 +1,17 @@
+//Breakpoint para Responsive web Desing (maps)
+$breakpoints:(
+    small:      0,      //Moviles
+    medium:     640px,  //desde 640px para tablets
+    large:      1024px, //desde 1024px para laptops
+    xlarge:     1440px  //desde 1440 px para escritorio
+);
+//Mixin para Responsive web Desing
+
+ @mixin from ($size) {
+     @media screen and (min-width: map-get($breakpoints,$size)) {
+        @content;
+    }
+}
+
+// 'size' es el nombre que le damos al parámetro(es el key) ,ahora  en el map-get llamamos
+// al mapa 'breakpoints' y a la ves colocamos el parametro

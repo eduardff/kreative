@@ -1,2 +1,17 @@
-/* Font */
+//@warn 
     @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:300,400,600,700&display=swap');
+
+//utils
+    @import "utils/mixins.scss";
+    @import "utils/vars";
+//Base
+    @import "base/normalize";
+    @import "base/base";
+    @import "base/typography";
+//Layout 
+    @import "layout/wrapper";
+    @import "layout/header";
+//Components    
+    @import "components/header.scss";
+    @import "components/menu";
+    @import "components/banner";

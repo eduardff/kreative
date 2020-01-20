@@ -1,0 +1,23 @@
+/* Archivo Base */
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+body{
+  margin: 0;
+}
+img{
+    max-width: 100%;
+}
+li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: $color-bg;
+  display: inline-block;
+}
+ul{
+  padding: 0;
+    margin: 0;
+}

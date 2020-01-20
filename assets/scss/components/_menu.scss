@@ -1,0 +1,38 @@
+/* Menu */
+.menu-toggle{
+    color: $color-bg;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+.nav{
+    position: fixed;
+    z-index: $z-index-fixed;
+    background: $color-bg-footer;
+    // height: calc(100vh - #{$header-height});
+    // width: 80vw;
+    top: $header-height;
+    right: -100vw; //para que se oculte y aparesca de la derecha
+
+    //para que el ul se ponga al medio
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+
+    transition: right .3s;
+    
+
+    &.show{
+        right: 0;
+    }
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.menu__item:hover{
+    background-color: $color-accent; 
+}
+.menu__link{
+    padding: 1rem 1.5rem;
+}
